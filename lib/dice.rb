@@ -1,5 +1,9 @@
 class Dice
+  attr_reader :results
+  def initialize
+    @results = []
+  end
   def roll
-    rand(1..6)
+    @results << rand(1..6)
   end
 end
